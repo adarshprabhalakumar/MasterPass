@@ -16,4 +16,4 @@ The Password Generator is a user-friendly tool that allows you to create strong 
 
 ## Motivation
 
-Our motivation is to provide a practical solution for online security. We aim to empower users to protect their digital presence with strong, memorable passwords, reducing the risk of security breaches.
+My motivation is to provide a practical solution for online security. I aim to empower users to protect their digital presence with strong, memorable passwords, reducing the risk of security breaches.
