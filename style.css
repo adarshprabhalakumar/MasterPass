@@ -1,0 +1,355 @@
+
+body{
+  font-family: 'Kanit', sans-serif;
+    background-color: #010101;
+    background: linear-gradient(150.26deg,#0f0104 0%,#020303 99.51%)!important;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main_box_uyt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+    padding: 0 30px;
+    height: 72px;
+    /* background: rgb(36, 36, 36); */
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+}
+.main_outer_section{
+    position: relative;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 25px
+}
+.range-slider {
+	position: relative;
+  width: 100%;
+	height: 20vmin;
+}
+
+.range-slider_input {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	z-index: 3;
+	transform: translateY(-50%);
+	-webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+	margin: 0;
+}
+
+.range-slider_input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+	border-radius: 50%;
+	opacity: 0;
+}
+
+.range-slider_input::-moz-range-thumb {
+  width: 14vmin;
+  height: 14vmin;
+  cursor: pointer;
+	border-radius: 50%;
+	opacity: 0;
+}
+
+.range-slider_thumb {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #f8ef00;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f8ef00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: #010101;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.range-slider_line {
+	height: 0.5vmin;
+	width: 100%;
+  background-color: #00f0ff;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	position: absolute;
+	z-index: 1;
+}
+
+.range-slider_line-fill {
+	position: absolute;
+	height: 0.5vmin;
+	width: 0;
+	background-color: #00f0ff;
+}
+
+
+/* check box
+---------------------------------------------------------*/
+.form__privacy {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Default style reset */
+  [type=checkbox] {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    appearance: none;
+  }
+  
+  [type=checkbox] {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  [type=checkbox]::before, [type=checkbox]::after {
+    position: absolute;
+    display: block;
+    content: "";
+  }
+  [type=checkbox]::before {
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border: 3px solid #f8ef00;
+    border-radius: 5px;
+  }
+  [type=checkbox]::after {
+    top: 8px;
+    left: 7px;
+    width: 15px;
+    height: 7px;
+    border-bottom: 3px solid #f8ef00;
+    border-left: 3px solid #f8ef00;
+    transform: rotate(-45deg);
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+  [type=checkbox]:checked::after {
+    opacity: 1;
+  }
+  
+  label {
+    margin-left: 19px;
+    color: #ddd;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+  
+  a {
+    color: inherit;
+  }
+  a:hover {
+    opacity: 0.7;
+  }
+  .main_text_main_hter{
+    font-size: 42px;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    color: #333;
+    margin-top: 120px;
+    margin-bottom: 40px;
+  }
+  .main_outerr_box_gnr{
+    margin: auto;
+    height: 180px;
+  }
+  .over_text_gen{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    /* border-bottom: 2px solid black; */
+    border: 2px solid #00f0ff;
+    padding: 17px;
+    background: #001819;
+    align-items: center;
+  }
+  .pass_erd_gentext{
+    width: calc(100% - 209px);
+    height: 63px;
+    /* line-height: 63px; */
+    font-size: 40px;
+    color: #fff;
+    display: inline-block;
+    /* margin-bottom: -25px; */
+    font-weight: regular;
+    /* font-family: 'Source Code Pro'; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .refresh_btn{
+    width: 40px;
+    height: 40px;
+    /* background-color: #fff; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color: #00f0ff;
+    align-items: center;
+  }
+  .copy_pass_btn{
+    width: 158px;
+    height: 50px;
+    background-color: #f8ef00;
+    display: inline-block;
+    border-radius: 13px;
+    font-size: 18px;
+    text-align: center;
+    color: #030303;
+    cursor: pointer;
+    border: 0;
+    user-select: none;
+    line-height: 48px;
+  }
+  .txt_srtng{
+      font-size: 13px;
+      color: azure;
+  }
+  .d_flex_main{
+      display: flex;
+      gap: 8px;
+  }
+
+
+  .main_sloide_ttr{
+    margin: auto;
+    width: calc(100% - 70px);
+    /* opacity: .8; */
+    background-color: #001819;
+    padding: 43px 43px;
+  }
+
+  .main_text_main_hter h1{
+    font-weight: 600;
+    font-size: 45px;
+
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #f8ef00;
+  }
+  .main_boc_trd{
+    box-sizing: border-box;
+    padding: 14px 20px;
+    min-height: 224px;
+    width: 380px;
+    background: #001819;
+    margin-bottom: 100px;
+
+  }
+  .mar_btm_10px{
+    margin-bottom: 15px;
+  }
+  .mar_list_main{
+    padding-left: 40px;
+  }
+  .main_box-sec{
+    display: flex;
+  }
+  .dd_main_box_wrap{
+    display: flex;
+    gap: 20px;
+
+  }
+  .icon_box_main{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background: #253d3e;
+    color: #00f0ff;
+  }
+  .clr_Gn{
+    color: #00ff22;
+  }
+  .text_main_bx{
+    line-height: 16px;
+    color: #ffff;
+  }
+  .mar_btm_10px{
+    color: #f8ef00;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  .mar_list_main li{
+    color: #fff;
+    margin-bottom: 14px;
+  }
+  .hed_text{
+    font-size: 22px;
+  }
+  .title_blockTer{
+    font-size: 25px!important;
+    color: #fff!important;
+  }
+  .refresh_btn:hover{
+     background-color: #124749;
+     cursor: pointer;
+  }
+.copy_pass_btn:hover{
+  background-color: #c5be10;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+
+    body{
+      width: 100%;
+    }
+    .main_outer_section , .main_sloide_ttr {
+      width: 100%;
+      max-width: 100%;
+    }
+    .dd_main_box_wrap{
+      flex-wrap: wrap;
+    }
+    .main_boc_trd{
+      width: 100%;
+      min-height: auto;
+      margin-bottom: 20px;
+    }
+    .main_box-sec{
+      flex-direction: column;
+      
+    }
+    .main_sloide_ttr{
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  }

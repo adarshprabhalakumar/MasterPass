@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Pass - Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <header class="main_box_uyt">
+        <div class="hed_text">
+            MasterPass
+        </div>
+    </header>
+    <main>
+        <div class="main_outer_section">
+            <div class="main_text_main_hter">
+                <h1> Password Generator</h1>
+            </div>
+            <div class="main_outerr_box_gnr">
+                <div class="over_text_gen">
+                    <div class="pass_erd_gentext password">
+                    </div>
+                    <div class="refresh_btn refresh">
+                        <svg width="22px" height="22px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M105.1 202.6c7.7-21.8 20.2-42.3 37.8-59.8c62.5-62.5 163.8-62.5 226.3 0L386.3 160H336c-17.7 0-32 14.3-32 32s14.3 32 32 32H463.5c0 0 0 0 0 0h.4c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0C73.2 122 55.6 150.7 44.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5zM39 289.3c-5 1.5-9.8 4.2-13.7 8.2c-4 4-6.7 8.8-8.1 14c-.3 1.2-.6 2.5-.8 3.8c-.3 1.7-.4 3.4-.4 5.1V448c0 17.7 14.3 32 32 32s32-14.3 32-32V396.9l17.6 17.5 0 0c87.5 87.4 229.3 87.4 316.7 0c24.4-24.4 42.1-53.1 52.9-83.7c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.5 62.5-163.8 62.5-226.3 0l-.1-.1L125.6 352H176c17.7 0 32-14.3 32-32s-14.3-32-32-32H48.4c-1.6 0-3.2 .1-4.8 .3s-3.1 .5-4.6 1z"/></svg>
+                    </div>
+                    <div class="copy_pass_btn copy">
+                        Copy Password
+                    </div>
+    
+                </div>
+                <div>
+                    <div class="d_flex_main strng_paswrd strong" style="display: none;">                        
+                        <span class="clr_Gn"> 
+                            <svg width="16px" height="16px" fill="currentColor"  xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                        </span>
+                        <span class="txt_srtng">Strong Password</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_sloide_ttr">
+                <div>
+                    <p class="text_main_bx">Use the slider, and select from the options, below, to lengthen your password and strengthen your security. <br><br>
+                    Password Length (4-64)</p>
+                </div>
+                <div>
+                    <div class="range-slider">
+                        <div id="slider_thumb" class="range-slider_thumb"></div>
+                        <div class="range-slider_line">
+                          <div id="slider_line" class="range-slider_line-fill"></div>
+                        </div>
+                        <input id="slider_input" class="range-slider_input count" type="range" value="12" min="4" max="64">
+                      </div>
+                </div>
+
+                <div class="dd_main_box_wrap">
+                    <div class="form__privacy" style="pointer-events: none;">
+                        <input id="letters" class="letters" name="checkbox" type="checkbox" checked readonly>
+                        <label for="letters">Letters</label>
+                    </div>
+                    <div class="form__privacy">
+                        <input id="case" class="case" name="checkbox" type="checkbox" checked>
+                        <label for="case">Mixed case</label>
+                    </div>
+                    <div class="form__privacy">
+                        <input id="punctuation" class="punctuation" name="checkbox" type="checkbox" checked>
+                        <label for="punctuation">Punctuation</label>
+                    </div>
+                    <div class="form__privacy">
+                        <input id="numbers" class="numbers" name="checkbox" type="checkbox" checked>
+                        <label for="numbers">Numbers</label>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <div class="ben_box_outer ">
+                    <div class="main_text_main_hter">
+                        <h1 class="title_blockTer">Password Manager with Password Generator: <br>
+                            The solution to weak passwords</h1>
+                    </div>
+                              
+                        <div class="main_box-sec">
+                            <div class="main_boc_trd">
+                                <div class="icon_box_main">
+                                    <svg width="22px" height="22px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></svg>
+
+                                </div>
+                                <div>
+                                    <h4 class="mar_btm_10px">Do you use any of these weak passwords?</h4>
+                                </div>
+                                <div>
+                                    <ul class="mar_list_main">
+                                        <li>Password</li>
+                                        <li>123456</li>
+                                        <li>Qwerty</li>
+                                        <li>Your child's name</li>
+                                        <li>I always use the same password.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_boc_trd">
+                                <div class="icon_box_main">
+                                    <svg width="22px" height="22px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="mar_btm_10px">Why are those passwords weak?</h4>
+                                </div>
+                                <div>
+                                    
+                                    <ul class="mar_list_main">
+                                        <li>They're easy to guess or crack. Really easy!</li>
+                                        <li>If one of your logins is compromised, a hacker then has access to all your services.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_boc_trd">
+                                <div class="icon_box_main">
+                                    <svg width="22px" height="22px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="mar_btm_10px">What's the solution?</h4>
+                                </div>
+                                <div>
+                                    
+                                    <ul class="mar_list_main"><li>Generate and store strong passwords and more in Norton Password Manager.</li><li>You won't have to remember multiple user names and passwords.</li></ul>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+       
+        
+    </main>
+
+<script>
+      const slider_input = document.getElementById('slider_input'),
+      slider_thumb = document.getElementById('slider_thumb'),
+      slider_line = document.getElementById('slider_line');
+
+        function showSliderValue() {
+            slider_thumb.innerHTML = slider_input.value;
+            const bulletPosition = (slider_input.value /slider_input.max),
+                    space = slider_input.offsetWidth - slider_thumb.offsetWidth;
+
+            slider_thumb.style.left = (bulletPosition * space) + 'px';
+            slider_line.style.width = slider_input.value + '%';
+        }
+
+        showSliderValue();
+        window.addEventListener("resize",showSliderValue);
+        slider_input.addEventListener('input', showSliderValue, false);
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+<script type="text/javascript">
+    $(document).ready(function(){
+        
+        $(document).on('click','.refresh', function(){
+            generate_password();
+        });
+        $(document).on('input','.count', function(){
+            generate_password();
+        });
+        $(document).on('change','input[type=checkbox]', function(){
+            generate_password();
+        });
+        $('.copy').click(function(){
+            let password = $(".password").text();
+            let el = $(this);
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(password).then(function() {
+                    el.text('Copied');
+                  setTimeout(() => {
+                    el.text('Copy');
+                  }, 1000);
+                }).catch(function(err) {
+                  console.error("Error copying text: ", err);
+                });
+            }
+        })
+        generate_password();
+    });
+    function generate_password(){
+        let length = $('.count').val();
+        let letters = $('.letters').is(':checked');
+        let casemixed = $('.case').is(':checked');
+        let punctuation = $('.punctuation').is(':checked');
+        let numbers = $('.numbers').is(':checked');
+        let checked_length = $('.dd_main_box_wrap').find('input[name=checkbox]:checked').length;
+        (checked_length > 2 || length>= 10) ? $('.strng_paswrd').show() : $('.strng_paswrd').hide();
+        let password = masterpass(length,letters,casemixed,numbers,punctuation);
+        $('.password').text(password);
+    }
+    function masterpass(length, letters, cases, numbers, punctuations) {
+      const lowecase = 'abcdefghijklmnopqrstuvwxyz';
+      const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      const num_chars = '0123456789';
+      const puncts = '!@#$%^&*()-=_+[]{}|;:,.<>?';
+    
+      let valid_chars = '';
+    
+      if (letters) {
+        valid_chars += lowecase;
+        if (cases) {
+          valid_chars += uppercase;
+        }
+      }
+    
+      if (numbers) {
+        valid_chars += num_chars;
+      }
+    
+      if (punctuations) {
+        valid_chars += puncts;
+      }
+    
+      if (valid_chars === '') {
+        return null;
+      }
+      
+      valid_chars= (valid_chars) ? valid_chars : ' ';
+    
+      let password = '';
+      for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * valid_chars.length);
+        password += valid_chars[randomIndex];
+      }
+      return password;
+    }
+
+</script>   
+</body>
+</html>
